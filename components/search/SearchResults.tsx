@@ -10,10 +10,9 @@ interface SearchResultsProps {
         description: string;
         thumbnail: string;
     }[];
-    totalItems?: number;
 }
 
-const SearchResults: React.FC<SearchResultsProps> = ({ data, totalItems }) => {
+const SearchResults: React.FC<SearchResultsProps> = ({ data }) => {
     return (
         <div className='grow overflow-y-scroll'>
             <div className='grid grid-cols-1 gap-x-6 gap-y-12 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4'>

@@ -9,7 +9,7 @@ const fetcher = async (url: string) => {
     return response.data;
 };
 
-function useSearch(queryString: string, offset) {
+function useSearch(queryString: string, offset: number) {
     // null prevents the APi from being called
     const url = queryString ? `/books/search/?query=${queryString}&offset=${offset}` : null;
     const { data, error, isLoading } = useSWR(url, fetcher);

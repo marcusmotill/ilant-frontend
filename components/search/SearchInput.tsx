@@ -6,6 +6,7 @@ import { MagnifyingGlassIcon } from '@heroicons/react/24/outline';
 
 interface SearchInputProps {
     queryString: string;
+    // eslint-disable-next-line no-unused-vars
     onInputChange: (value: string) => void;
 }
 

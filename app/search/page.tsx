@@ -26,13 +26,10 @@ export default function Search() {
                 onInputChange={setQueryString}
             />
             {isLoading && <SearchLoading />}
-            {!isLoading && data && (
-                <SearchResults data={data?.results} totalItems={data?.total} />
-            )}
+            {!isLoading && data && <SearchResults data={data?.results} />}
             {!isLoading && !data && <SearchZeroState />}
             {data && (
                 <SearchPagination
-                    totalItems={data?.total}
                     currentPage={currentPage}
                     onPageChange={setCurrentPage}
                 />

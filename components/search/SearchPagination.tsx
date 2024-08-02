@@ -2,13 +2,12 @@
 import React from 'react';
 
 interface SearchPaginationProps {
-    totalItems: number | undefined;
     currentPage: number;
+    // eslint-disable-next-line no-unused-vars
     onPageChange: (page: number) => void;
 }
 
 const SearchPagination: React.FC<SearchPaginationProps> = ({
-    totalItems,
     currentPage,
     onPageChange,
 }) => {
