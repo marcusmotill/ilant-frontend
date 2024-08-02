@@ -1,3 +1,8 @@
 {
-  "extends": "next/core-web-vitals"
+  "plugins": ["prettier", "eslint-plugin-import"],
+  "extends": ["next/core-web-vitals", "plugin:prettier/recommended"],
+  "rules": {
+      "no-unused-vars": "error",
+      "import/no-unused-modules": [1]
+  }
 }
